@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Jane Doe</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Hello, I'm Jane Doe</h1>
+                <h2>A Frontend Developer & UX Enthusiast</h2>
+                <button id="cta-button">View My Work</button>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <div class="profile-card">
+                <img src="images/profile.jpg" alt="A professional portrait of Jane Doe" class="profile-pic">
+                <p>
+                    I specialize in building responsive and engaging user interfaces. With three years of experience, 
+                    I focus on performance and accessibility in every project.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="content-section">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="images/project1.jpg" alt="Screenshot of a financial dashboard application" class="project-img">
+                    <h3>Project Alpha</h3>
+                    <p>A data visualization dashboard built with React and D3.js.</p>
+                </div>
+                <div class="project-card">
+                    <img src="images/project2.jpg" alt="Screenshot of an e-commerce website design" class="project-img">
+                    <h3>Project Beta</h3>
+                    <p>E-commerce platform redesign focusing on mobile-first responsiveness.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>Get in Touch</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="form-status" style="display: none; color: green; margin-top: 15px;">Message Sent Successfully!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Jane Doe. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
